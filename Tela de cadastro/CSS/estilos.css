@@ -1,0 +1,78 @@
+body{
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+}
+.formulario{
+    color: blanchedalmond;
+    background-color: #8B4513;
+    border: transparent;
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 31%;
+    margin-bottom: 3%;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 20px; 
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 10px #333;
+
+}
+
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-left: 42%;
+    margin-top: 3%;
+
+}
+
+.button {
+    background-color: #333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 33.5%;
+
+  }
+
+  .button:hover{
+    background-color: white;
+    color: #8B4513;
+
+  }
+
+  .navegar{
+    background-color: #8B4513;
+    overflow: hidden;
+    width: 100%;
+
+  }
+
+  .navegar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  }
+
+  .navegar a:hover{
+    background-color: #333;
+    color: white;
+
+  }
+  
