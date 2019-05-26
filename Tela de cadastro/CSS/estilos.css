@@ -5,16 +5,24 @@ body{
     background-size: 100% 100%;
     background-attachment: fixed;
 
+}
+
+.inputs{
+  width: 235px;
+  height: 25px;
+  border-radius: 3px;
+  
 
 }
-.formulario{
+
+.formulario_cadastro{
     color: blanchedalmond;
     background-color: #8B4513;
     border: transparent;
     position: absolute;
-    margin-top: 170px;
-    margin-left: 31%;
-    margin-bottom: 3%;
+    margin-top: 210px;
+    margin-left: 29.5%;
+    margin-bottom: 2%;
     padding-left: 25px;
     padding-top: 20px;
     padding-right: 25px;
@@ -25,17 +33,35 @@ body{
 
 }
 
+.formulario_login{
+  color: blanchedalmond;
+  background-color: #8B4513;
+  border: transparent;
+  position: absolute;
+  margin-top: 210px;
+  margin-left: 38%;
+  margin-bottom: 2%;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px; 
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 10px #333;
+
+}
+
 .logo{
     position: absolute;
     width: 200px;
     height: 200px;
     margin-left: 42%;
-    margin-top: 3%;
+    margin-top: 2%;
 
 }
 
-.button {
-    background-color: #333; /* Green */
+.button_cadastro {
+    background-color: #333;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -48,7 +74,27 @@ body{
 
   }
 
-  .button:hover{
+  .button_login {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 22%;
+
+  }
+
+  .button_cadastro:hover{
+    background-color: white;
+    color: #8B4513;
+
+  }
+
+  .button_login:hover{
     background-color: white;
     color: #8B4513;
 
@@ -57,7 +103,10 @@ body{
   .navegar{
     background-color: #8B4513;
     overflow: hidden;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
   }
 
@@ -75,4 +124,3 @@ body{
     color: white;
 
   }
-  

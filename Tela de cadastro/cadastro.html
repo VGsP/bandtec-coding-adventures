@@ -8,7 +8,6 @@
     <title>Tela de cadastro</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="icon" href="Imagens/logo.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript" src="Javascript/functions.js"></script>
 </head>
 
@@ -26,39 +25,51 @@
 
     </nav>
 
-    <form action="" class="formulario" class="w3-container" id="form">
+    <form class="formulario_cadastro" id="form">
 
-        <label>Insira Nome Completo:</label> <br>
-        <input type="text" id="nome" placeholder="Nome Completo" autofocus class="w3-input" required><br>
-        <div id="semnome" style="color:red; position: absolute"></div>
+        <div style="float:left">
 
-        <br><br>
+            <label>Insira Nome Completo:</label> <br>
+            <input class="inputs" type="text" id="nome" placeholder="Nome Completo" autofocus class="w3-input"><br>
+            <div id="semnome" style="color:red; position: absolute"></div>
 
-        <label>Insira E-mail:</label> <br>
-        <input type="text" id="email" placeholder="ex: reginaldo12@gmail.com" class="w3-input" required><br>
-        <div id="sememail" style="color:red; position: absolute"></div>
+            <br><br>
 
-        <br><br>
+            <label>Insira CPF:</label> <br>
+            <input class="inputs" type="number" id="cpf" placeholder="ex: 54723456789-23" class="w3-input"><br>
+            <div id="semcpf" style="color:red; position: absolute"></div>
 
-        <label>Insira Senha:</label> <br>
-        <input type="password" id="senha" placeholder="mínimo 6 caracteres" class="w3-input" required><br>
-        <div id="semsenha" style="color:red; position: absolute"></div>
+            <br><br>
 
-        <br><br>
+            <label>Insira sua Data de Nascimento:</label> <br>
+            <input class="inputs" type="number" id="idade" placeholder="ex: xx/xx/xxxx" class="w3-input"><br>
+            <div id="semidade" style="color: red; position: absolute"></div>
 
-        <label>Confirme sua Senha:</label> <br>
-        <input type="password" id="confirmarsenha" placeholder="confirme sua senha" class="w3-input" required><br>
-        <div id="semconfirmarsenha" style="color:red; position: absolute"></div>
+        </div>
 
-        <br><br>
+        <div style="float:right">
 
-        <label>Insira CPF:</label> <br>
-        <input type="number" id="cpf" placeholder="ex: 54723456789-23" class="w3-input" required><br>
-        <div id="semcpf" style="color:red; position: absolute"></div>
+            <label>Insira E-mail:</label> <br>
+            <input class="inputs" type="text" id="email" placeholder="ex: reginaldo12@gmail.com" class="w3-input"><br>
+            <div id="sememail" style="color:red; position: absolute"></div>
 
-        <br><br>
+            <br><br>
 
-        <button type="button" onclick="cadastrar()" class="button">Confirmar Cadastro</button>
+            <label>Insira Senha:</label> <br>
+            <input class="inputs" type="password" id="senha" placeholder="mínimo 6 caracteres" class="w3-input"><br>
+            <div id="semsenha" style="color:red; position: absolute;"></div>
+
+            <br><br>
+
+            <label>Confirme sua Senha:</label> <br>
+            <input class="inputs" type="password" id="confirmarsenha" placeholder="confirme sua senha" class="w3-input"><br>
+            <div id="semconfirmarsenha" style="color:red; position: absolute"></div>
+
+            <br><br>
+
+        </div>
+
+        <button type="button" onclick="cadastrar()" class="button_cadastro">Confirmar Cadastro</button>
 
     </form>
 

@@ -8,7 +8,6 @@
     <title>Tela de cadastro</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="icon" href="Imagens/logo.png">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script type="text/javascript" src="Javascript/functions.js"></script>
 </head>
 
@@ -26,25 +25,25 @@
 
     </nav>
 
-    <form action="" class="formulario" class="w3-container">
+    <form action="" class="formulario_login">
 
 
         <label>Insira E-mail:</label> <br>
-        <input type="text" id="email_login" placeholder="" class="w3-input" required>
+        <input class="inputs" type="text" id="email_login" placeholder="" class="w3-input" required>
 
         <br><br>
 
         <label>Insira Senha:</label> <br>
-        <input type="password" id="senha_login" placeholder="" class="w3-input" required>
-
-        <br>
-
-        <label>Continuar Conectado</label>
-        <input type="checkbox">
+        <input class="inputs" type="password" id="senha_login" placeholder="" class="w3-input" required>
 
         <br><br>
 
-        <button type="button" onclick="logar()" class="button">Acessar Conta</button>
+            <label>Continuar Conectado</label>
+            <input type="checkbox">
+
+        <br><br>
+
+        <button type="button" onclick="logar()" class="button_login">Acessar Conta</button>
 
     </form>
 
