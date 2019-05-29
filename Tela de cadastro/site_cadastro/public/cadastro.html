@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="icon" href="Imagens/logo.png">
+    <script type="text/javascript" src="Javascript/functions.js"></script>
+    <script type="text/javascript" src="jQuery/jquery-1.2.6.pack.js"></script>
+    <script type="text/javascript" src="jQuery/jquery.maskedinput-1.1.4.pack.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#cpf").mask("999.999.999-99");
+        });
+
+        $(document).ready(function(){
+            $("#idade").mask("99/99/9999");
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <img src="imagens/logo.png" alt="logo tipo café" class="logo" class="flex-container">
+
+    <nav class="navegar" class="flex-container">
+
+        <a href="">Sobre nós</a>
+
+        <a href="cadastro.html" style="float:right;">Cadastro</a>
+
+        <a href="login.html" style="float:right;">Login</a>
+
+    </nav>
+
+    <form class="formulario_cadastro" id="form" class="flex-container">
+
+        <div style="float:left">
+
+            <label>Insira Nome Completo:</label> <br>
+            <input class="inputs" type="text" id="nome" placeholder="Nome Completo" autofocus class="w3-input"><br>
+            <div id="semnome" style="color:red; position: absolute"></div>
+
+            <br><br>
+
+            <label>Insira CPF:</label> <br>
+            <input class="inputs" type="text" id="cpf" placeholder="ex: 54723456789-23" class="w3-input"><br>
+            <div id="semcpf" style="color:red; position: absolute"></div>
+
+            <br><br>
+
+            <label>Insira sua Data de Nascimento:</label> <br>
+            <input class="inputs" type="text" id="idade" placeholder="ex: xx/xx/xxxx" class="w3-input"
+                class="idade"><br>
+            <div id="semidade" style="color: red; position: absolute"></div>
+
+        </div>
+
+        <div style="float:right">
+
+            <label>Insira E-mail:</label> <br>
+            <input class="inputs" type="text" id="email" placeholder="ex: reginaldo12@gmail.com" class="w3-input"><br>
+            <div id="sememail" style="color:red; position: absolute"></div>
+
+            <br><br>
+
+            <label>Insira Senha:</label> <br>
+            <input class="inputs" type="password" id="senha" placeholder="mínimo 6 caracteres" class="w3-input"><br>
+            <div id="semsenha" style="color:red; position: absolute;";></div>
+
+            <br><br>
+
+            <label>Confirme sua Senha:</label> <br>
+            <input class="inputs" type="password" id="confirmarsenha" placeholder="confirme sua senha"
+                class="w3-input"><br>
+            <div id="semconfirmarsenha" style="color:red; position: absolute"></div>
+
+            <br><br>
+
+        </div>
+
+        <button type="button" onclick="cadastrar()" class="button_cadastro">Confirmar Cadastro</button>
+
+    </form>
+
+</body>
+
+</html>
